@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(fonts/roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url(fonts/roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'courier';
+    src: url(fonts/Courier\ Prime.ttf);
+}
+.name {
+    font-family: 'Roboto';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #ff9999;
+}
+
+p {
+    text-indent: 10%;
+    margin: 25px;
+    font-family: 'Roboto Thin';
+    font-size: 3vmin;
+    text-justify: inter-ideograph;
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+    font-family: 'Roboto Thin';
+    font-size: 3vmin;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'courier';
+    font-size: 7vmin;
+    color:#32ff32; 
+}
+
+mark {
+    background-color: rgb(189, 59, 221);
+    color: black;
+  }
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background: #202124;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 30px;
+    background: rgb(7, 7, 7);
+    color: rgb(239, 239, 239);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto Bold';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.fade-in-text {
+     text-align: center;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+
+}
+.div1 {
+    background: #ff9999;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.container {
+  resize: both;
+  overflow-y: hidden;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  }
+   
+  .box {
+	width: calc(50% - 2rem);
+	height: 500px;
+	border-radius: 20px;
+	margin: 1rem;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: all 0.5s;
+  }
+.box-1 {
+    background-color: rgb(255, 216, 190);
+  }
+.box-2 {
+    background-color: rgb(255, 238, 221);
+  }
+.box-3 {
+    background-color: rgb(248, 247, 255);
+  }
+.box-4 {
+    background-color: rgb(214, 214, 255);
+  }
+.box-5 {
+    background-color: #202124;
+  }
+
+  .inView {
+	opacity: 1;
+	transform: translateY(0px);
+  }
+
+.slideshow-container {
+  position: absolute;
+  object-fit:contain;
+
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.row {
+  display: flex;
+}
